@@ -11,10 +11,29 @@ package io.javabrains.javabasics;
 7.  Loop through the array of `Animal` objects and print the name, age, and sound of each animal.
  */
 
+class Animal{
+    public Animal(){
+        this.name = "dog";
+        this.age = 10;
+    }
+    protected String name;
+    protected int age;
+}
 
+class Dog extends Animal{
+    public Dog(){
+        this.name = "DOG";
+        this.age= 10;
+    }
+
+}
+class Cat extends Animal{
+
+}
 public class InheritanceChallenge {
 
     public static void main(String[] args) {
+        Car car = new Car();
 
     }
 }

@@ -17,10 +17,30 @@ Details: 2020 Toyota Camry
 ```
 
  */
+class Car{
+    public Car(){
+        this.model = "BMW";
+        this.year = 1918;
+    }
+    public String toString(){
+        return model+ " make "+ year;
+    }
+    private String model;
+    private int year;
+    public String getModel(){
+        return model;
+    }
+    public int getYear(){
+        return year;
+    }
+
+}
 
 public class ClassesAndObjects {
 
     public static void main(String[] args) {
+        Car car = new Car();
+        System.out.println(car.toString());
 
     }
 }

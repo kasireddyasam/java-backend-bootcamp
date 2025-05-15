@@ -17,7 +17,6 @@ public class JavaVariables {
         // double variable to store a double value
         double db = 123.456789;
 
-
         // char variable to store a single character
         char a = 'a';
 
@@ -36,6 +35,8 @@ public class JavaVariables {
 
 
         // Step 3: Modify the values of the variables and print the updated values
+        var = 123;
+        System.out.println(var);
 
 
     }
