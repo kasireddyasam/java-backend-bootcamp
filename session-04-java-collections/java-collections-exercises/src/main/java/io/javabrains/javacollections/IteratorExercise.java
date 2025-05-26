@@ -8,6 +8,13 @@ Write code that calls the getFruits method and then iterates over the collection
  */
 
 public class IteratorExercise {
+    public static void main(String[] args) {
+        FruitSupplier fruitSupplier = new FruitSupplier();
+        Collection<String> getFruits = fruitSupplier.getFruits();
+        for(String fruits : getFruits){
+            System.out.println(fruits);
+        }
+    }
 
 
 }

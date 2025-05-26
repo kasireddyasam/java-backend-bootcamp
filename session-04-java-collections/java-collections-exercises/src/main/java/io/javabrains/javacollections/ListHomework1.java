@@ -1,5 +1,9 @@
 package io.javabrains.javacollections;
+import java.util.ArrayList;
+import java.util.List;
 
+import static java.lang.Math.max;
+import static java.lang.Math.min;
 /*
 Create a Java program that allows a user to perform various operations on an ArrayList of integers.
 The program should display a menu of options, and the user should be able to select one of the following operations:
@@ -15,5 +19,16 @@ The program should continue to display the menu and allow the user to perform op
 */
 
 public class ListHomework1 {
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7));
+        int miniumn = 100;
+        int maximum = 0;
+        for (int i : list) {
+            miniumn = min(miniumn, i);
+            maximum = max(maximum, i);
+            System.out.printf("%d ", i);
+        }
+        System.out.printf("\nMin: %d Max: %d", miniumn, maximum);
 
+    }
 }
